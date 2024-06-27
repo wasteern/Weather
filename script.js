@@ -1,7 +1,7 @@
 async function getWeather() {
     const city = document.getElementById('city').value;
     const apiKey = 'f23833450520400ba24165246241306'; 
-    const url = `http://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=10&aqi=no&alerts=no`;
+    const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${city}&days=10&aqi=no&alerts=no`;
     
     var container = document.querySelector('.container');
     container.classList.add('fixed');
